@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TouchView" customModule="Coffee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-Pm-aLx">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsq-WY-AHK">
+                            <color key="backgroundColor" red="0.83259214739999998" green="0.83259214739999998" blue="0.83259214739999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.1764705882" green="0.16078431369999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-kE-Ne9">
+                            <color key="backgroundColor" red="0.1764705882" green="0.16078431369999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Accept">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="gDK-o1-fGX"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I3-nz-WFK">
+                    <color key="backgroundColor" red="0.1764705882" green="0.16078431369999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="yld-jk-DEq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-7Y-sKv">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vVo-Pm-aLx" firstAttribute="top" secondItem="ycT-7Y-sKv" secondAttribute="bottom" constant="7" id="1if-oB-cL0"/>
+                <constraint firstItem="vVo-Pm-aLx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DUC-1Q-R1v"/>
+                <constraint firstItem="7I3-nz-WFK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HPf-Dz-7Hm"/>
+                <constraint firstItem="7I3-nz-WFK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QVE-iz-HcE"/>
+                <constraint firstAttribute="trailing" secondItem="vVo-Pm-aLx" secondAttribute="trailing" id="Z9P-ay-h8M"/>
+                <constraint firstAttribute="trailing" secondItem="ycT-7Y-sKv" secondAttribute="trailing" id="a9m-be-EAR"/>
+                <constraint firstAttribute="trailing" secondItem="7I3-nz-WFK" secondAttribute="trailing" id="dyw-JT-TUD"/>
+                <constraint firstItem="ycT-7Y-sKv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i4D-az-Spf"/>
+                <constraint firstAttribute="bottom" secondItem="vVo-Pm-aLx" secondAttribute="bottom" id="jWZ-y3-IrV"/>
+                <constraint firstItem="ycT-7Y-sKv" firstAttribute="top" secondItem="7I3-nz-WFK" secondAttribute="bottom" id="u4z-WS-PgG"/>
+            </constraints>
+            <connections>
+                <outlet property="acceptButton" destination="yvv-kE-Ne9" id="SnO-PE-Uwr"/>
+                <outlet property="cancelButton" destination="Wsq-WY-AHK" id="LbC-bU-7cu"/>
+                <outlet property="tableView" destination="ycT-7Y-sKv" id="4nu-cz-kBv"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
