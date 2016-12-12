@@ -12,6 +12,7 @@ class ShowUserTableCell: UITableViewCell {
     
     @IBOutlet weak var selectImageView: UIImageView!
     @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var userImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

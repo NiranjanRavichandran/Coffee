@@ -37,6 +37,7 @@
 		EDB490381DB853FF005E6419 /* ShowUserTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB490371DB853FF005E6419 /* ShowUserTableCell.swift */; };
 		EDB4903B1DB88006005E6419 /* SortedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB490391DB88006005E6419 /* SortedTableCell.swift */; };
 		EDB4903C1DB88006005E6419 /* SortedTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB4903A1DB88006005E6419 /* SortedTableCell.xib */; };
+		EDB712A61DCD67490004F6B2 /* PickerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB712A51DCD67490004F6B2 /* PickerTableCell.swift */; };
 		EDE377D71DC13868001E166A /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE377D61DC13868001E166A /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		EDB490371DB853FF005E6419 /* ShowUserTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUserTableCell.swift; sourceTree = "<group>"; };
 		EDB490391DB88006005E6419 /* SortedTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedTableCell.swift; sourceTree = "<group>"; };
 		EDB4903A1DB88006005E6419 /* SortedTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SortedTableCell.xib; sourceTree = "<group>"; };
+		EDB712A51DCD67490004F6B2 /* PickerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableCell.swift; sourceTree = "<group>"; };
 		EDE377D61DC13868001E166A /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 		EDB4901B1DB47FED005E6419 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDB712A51DCD67490004F6B2 /* PickerTableCell.swift */,
 				EDB490391DB88006005E6419 /* SortedTableCell.swift */,
 				EDB490371DB853FF005E6419 /* ShowUserTableCell.swift */,
 				EDB490331DB8497D005E6419 /* UserTableCell.swift */,
@@ -381,6 +384,7 @@
 				EDB490151DB43D1E005E6419 /* PaymentView.swift in Sources */,
 				EDB4901F1DB4837E005E6419 /* TouchAlertView.swift in Sources */,
 				EDB490131DB425C7005E6419 /* HomeViewController.swift in Sources */,
+				EDB712A61DCD67490004F6B2 /* PickerTableCell.swift in Sources */,
 				EDB490301DB72224005E6419 /* NetworkManager.swift in Sources */,
 				EDB48FDD1DB3CA8A005E6419 /* AppDelegate.swift in Sources */,
 				EDB490261DB48421005E6419 /* ListTwoTableCell.swift in Sources */,

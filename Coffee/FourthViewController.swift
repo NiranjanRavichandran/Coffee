@@ -31,7 +31,7 @@ class FourthViewController: UIViewController, ButtonResponderDelegate, UITextFie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        usernameField.text = appdelegate.userId
 //        usernameField.delegate = self
 //        passwordField.delegate = self
 //        signInButton.addTarget(self, action: #selector(self.signInUsingPass), for: .touchUpInside)
@@ -39,7 +39,7 @@ class FourthViewController: UIViewController, ButtonResponderDelegate, UITextFie
 //        self.touchIDButton.addTarget(self, action: #selector(self.showTouchID), for: .touchUpInside)
 //        self.usernameField.text = appdelegate.userId
         
-        UIView.animate(withDuration: 1.5, animations: {
+        UIView.animate(withDuration: 2, animations: {
             //Password field animation
             self.passwordField.alpha = 0.5
             self.passwordField.text = "Password"

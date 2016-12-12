@@ -24,21 +24,36 @@ class SortedTableCell: UITableViewCell {
     }
     
     func configure() {
-//        if appdelegate.studyNumber == 3 {
-//            for i in 0..<userList.count {
-//                sortedImageViews[i].clipsToBounds = true
-//                sortedImageViews[i].image = UIImage(named: userList[i])
-//                titles[i].text = userList[i]
-//            }
-//        }else {
+        if appdelegate.isDisplayAll {
+            appdelegate.selectedUsers = userList
+        }
+        if appdelegate.studyNumber == 3 {
             for i in 0..<sortedImageViews.count {
                 sortedImageViews[i].clipsToBounds = true
-                sortedImageViews[i].image = UIImage(named: appdelegate.selectedUsers[i])
                 if appdelegate.selectedUsers[i] != "None" {
+                    sortedImageViews[i].image = UIImage(named: appdelegate.selectedUsers[i])
                     titles[i].text = appdelegate.selectedUsers[i]
                 }
             }
-//        }
+        }else {
+            var i = 0, j = 4
+            while (i < sortedImageViews.count && j >= 0) {
+                //print("###", i, j)
+                while (appdelegate.selectedUsers[j] == "None") {
+                    //print("@@@",appdelegate.selectedUsers[j])
+                    if j == 0 || appdelegate.selectedUsers[j] != "None"{
+                        break
+                    }
+                    j -= 1
+                }
+                //print(">>>", appdelegate.selectedUsers[j])
+                sortedImageViews[i].clipsToBounds = true
+                sortedImageViews[i].image = UIImage(named: appdelegate.selectedUsers[j])
+                titles[i].text = appdelegate.selectedUsers[j]
+                i += 1
+                j -= 1
+            }
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

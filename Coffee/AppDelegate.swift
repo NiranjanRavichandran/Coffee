@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let appDefaults = UserDefaults.standard
     var currentBalance = 25
     var selectedUsers: [String] = Array<String>(repeating: "None", count: 5)
-
+    var isDisplayAll: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.statusBarStyle = .lightContent
