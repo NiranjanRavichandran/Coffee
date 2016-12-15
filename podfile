@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Old-Specs'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'Coffee' do
+pod 'Firebase/Database'
+end
